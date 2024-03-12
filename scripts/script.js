@@ -61,11 +61,14 @@ const coffeeEvent = {
     date: "April 10, 2024",
     venue: "Jazz & Java"
 };
+let messageDisplay = document.getElementById("playlist-container");
+messageDisplay.innerHTML = "";
 let msgAboutoffeeEvent = document.createElement("li")
 msgAboutoffeeEvent.textContent = `${coffeeEvent.name} - ${coffeeEvent.date} - ${coffeeEvent.venue} `
+messageDisplay.appendChild(msgAboutoffeeEvent);
 
 
-    // Task 9: Use spreadrest operators on an array
+    // Task 9: Use spread operators on an array
     
     // Array of coffee types
 const coffeeTypes = ["Espresso", "Latte", "Cappuccino"];
@@ -75,5 +78,3 @@ const newType = "Mocha";
 let updatedCoffeeTypes = [...coffeeTypes, newType];
 
 console.log("Updated Coffee Types:", updatedCoffeeTypes);
-
-    
